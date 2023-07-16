@@ -237,7 +237,7 @@ c = (
 
 #PIE RADIUS PLEIN
 d = (
-    Pie(init_opts=opts.InitOpts(bg_color="#FFFFFF"))
+    Pie()
     .add(
         series_name="访问来源",
         data_pair=data_pair,
