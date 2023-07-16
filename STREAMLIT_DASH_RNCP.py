@@ -124,7 +124,7 @@ with c1 :
     animation_speed = animations[animate]
 with c2 : 
     year_slider = st.empty()
-with c1 :
+with c2 :
     deck_map = st.empty()
 
 
@@ -162,8 +162,8 @@ with c1 :
             longitude=2.48,
             zoom=4,
             pitch=40,
-            height=500, 
-            width= 900,
+            height=800, 
+            width= 1200,
         ),  
        layers = pdk.Layer(
             'ColumnLayer',
