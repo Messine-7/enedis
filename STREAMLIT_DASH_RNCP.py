@@ -49,7 +49,7 @@ pie = df_1["sentiment"].value_counts()
 pie  = pd.Series.to_frame(pie)
 
 list_x = pie.index.tolist()
-list_y = pie.sentiment.tolist()
+list_y = pie["sentiment"].tolist()
 
 dict_1 = pie.to_dict()
 
