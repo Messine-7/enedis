@@ -223,12 +223,12 @@ c = (
         "",
         data_pair,
         radius=["30%", "70%"],
-        center=["70%", "50%"],
+        center=["50%", "50%"],
         rosetype="radius",
 
     )
     .set_colors(["#E8DAEF", "#D2B4DE", "#A569BD"])
-    .set_global_opts(title_opts=opts.TitleOpts(title="Pie"))
+    .set_global_opts(title_opts=opts.TitleOpts(title="Pie", pos_left="center"))
 
 
 )
@@ -243,14 +243,14 @@ d = (
         data_pair=data_pair,
         rosetype="radius",
         radius="60%",
-        center=["70%", "50%"],
+        center=["50%", "50%"],
         label_opts=opts.LabelOpts(is_show=True, position="center",)
     )
     .set_colors(["#FCF3CF", "#F9E79F", "#F7DC6F"])
     .set_global_opts(
         title_opts=opts.TitleOpts(
             title="Customized Pie",
-            pos_left="right",
+            pos_left="center",
             pos_top="20",
             title_textstyle_opts=opts.TextStyleOpts(color="#808080"),
         ),
@@ -289,7 +289,7 @@ d_2 = {
             "name": "Source of interview",
             "type": "pie",
             "radius": "60%",
-            "center": ["70%", "50%"],
+            "center": ["50", "50%"],
             "data": [
                 {"value": 235, "name": "Video Ad"},
                 {"value": 274, "name": "Affiliate Ad"},
@@ -361,10 +361,10 @@ c5, c6, c7 = st.columns([6,0.2,5])
 with c4 :
     st_pyecharts(c)
     st_pyecharts(d, key = random.random())
+    st_echarts(options=d_2)
     
     
 with c5 :
     st.pyplot(plt)
     
-with c7 :    
-    st_echarts(options=d_2)
+
