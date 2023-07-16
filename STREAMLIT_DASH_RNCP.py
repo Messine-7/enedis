@@ -106,7 +106,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 #--------------------------------------------------------------------------- MAP ANIMATION  + SLIDER
 
 
-c1,c2,c3, c4 = st.columns([0.5,8,0.2,5])
+c1,c2,c3, c4 = st.columns([0.5,10,0.2,5])
 
 #Reduit l'espace entre ligne
 st.markdown("""
@@ -162,8 +162,8 @@ with c2 :
             longitude=2.48,
             zoom=4,
             pitch=40,
-            height=800, 
-            width= 1200,
+            height=550, 
+            width= 1300,
         ),  
        layers = pdk.Layer(
             'ColumnLayer',
