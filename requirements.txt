@@ -7,3 +7,4 @@ pyecharts==1.9
 pySankey==0.0.1
 streamlit==1.22.0
 streamlit_echarts==0.4.0
+seaborn==0.12
