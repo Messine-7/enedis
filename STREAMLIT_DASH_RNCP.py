@@ -32,7 +32,7 @@ from pyecharts.globals import ThemeType
 
 
 
-df = pd.read_csv("D:/Documents/DATA Formation/FORMATION/PROJET/ENEDIS/Dataset/df_coord.csv", sep = ",")
+df = pd.read_csv("df_clean.csv", sep = ",")
 gp = pd.pivot_table(df, index = ["year", "geo", "lon", "lat"], values="review", aggfunc ="count").reset_index()
 
 df_1 = pd.read_csv("D:/Documents/DATA Formation/FORMATION/PROJET/ENEDIS/Dataset/df_pred.csv", sep = ",")
